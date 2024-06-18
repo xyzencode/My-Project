@@ -72,6 +72,16 @@
   }
 }
 
+.swapper-landing>div>h1>img {
+  height: 48px;
+  padding-left: 24px;
+
+  @media screen and (max-width: 768px) {
+    height: 32px;
+    padding-left: 12px;
+  }
+}
+
 .swapper-landing>div>p {
   font-size: 1.5rem;
   font-weight: 400;
