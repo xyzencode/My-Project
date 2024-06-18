@@ -51,13 +51,63 @@
 }
 
 .swapper-landing>div>h1 {
-  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 16px;
 
+  @media screen and (max-width: 1440px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
+
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
-    margin-bottom: 8px;
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+}
+
+.swapper-landing>div>p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+}
+
+
+.swapper-landing>div>.swapper-button {
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+
+  }
+
+  @media screen and (max-width: 480) {
+    font-size: 32px;
   }
 }
 
