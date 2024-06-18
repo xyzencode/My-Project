@@ -1,10 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("./animation.css");
 @import url("./root.css");
 
 
 * {
   font-family: "Poppins", sans-serif;
   transition: all 0.7s;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.swapper-card {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 150px;
+}
+
+.swapper-card-container {
+  animation: Card 60s linear infinite;
+  cursor: default;
+}
+
+.card-image {
+  margin-left: 24px;
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+}
+
+.swapper-card-information {
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swapper-card-description {
+  margin-top: 24px;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.swapper-card-title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.swapper-landing-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .swapper-navbar {
@@ -43,6 +97,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
   height: 100vh;
 }
 

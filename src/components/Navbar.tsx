@@ -30,7 +30,7 @@ export default function Navbar() {
     }, [scroll]);
     return (
         <>
-            <header className={`fixed bg-white w-full z-50 px-8 md:px-44 py-[24px] flex justify-between transition-[padding,box-shadow] duration-700 ${scroll ? 'shadow-lg py-[16px]' : ''}`}>
+            <header className={`fixed bg-white w-full z-50 px-8 md:px-44 py-4 flex justify-between transition-[padding,box-shadow] duration-700 ${scroll ? 'shadow-lg py-2' : ''}`}>
                 <div className="font-bold text-xl cursor-default">Zayden<span className="text-primary">Store</span></div>
                 <div className="swapper-navbar font-bold leading-tight items-center justify-center flex">
                     <a href="#" className="link link-underline link-underline-primary text-black">Home</a>

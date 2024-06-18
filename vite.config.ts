@@ -1,4 +1,4 @@
-import { randomUUID } from "crypto"
+import { randomBytes } from "crypto"
 import path from "path"
 import react from "@vitejs/plugin-react"
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
@@ -17,12 +17,9 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
-        entryFileNames: `assets/js/ZAYDEN-${randomUUID().toUpperCase()}.js`,
-        chunkFileNames: `assets/js/ZAYDEN-${randomUUID().toUpperCase()}.js`,
-        assetFileNames: `assets/[ext]/ZAYDEN-${randomUUID().toUpperCase()}.[ext]`,
-        manualChunks: {
-          vendor: ['react', 'react-dom']
-        }
+        entryFileNames: `assets/js/ZAYDEN-${randomBytes(24).toString('hex').toUpperCase()}.js`,
+        chunkFileNames: `assets/js/ZAYDEN-${randomBytes(24).toString('hex').toUpperCase()}.js`,
+        assetFileNames: `assets/[ext]/ZAYDEN-${randomBytes(24).toString('hex').toUpperCase()}.[ext]`,
       }
     }
   },

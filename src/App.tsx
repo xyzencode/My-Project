@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <div className="container">
+      <div className="px-8 md:px-44 pb-16 flex flex-col gap-24">
         <Landing />
         <Products />
       </div>
