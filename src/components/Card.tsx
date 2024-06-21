@@ -2,7 +2,7 @@ import { a } from "@/data"
 
 export default function CardProducts() {
     return (
-        <div className="flex overflow-x-hidden space-x-4 p-4">
+        <div className="flex overflow-hidden space-x-4">
             {a.map((item, index) => (
                 <div className="swapper-card-container">
                     <div key={index} className="swapper-card flex-none">

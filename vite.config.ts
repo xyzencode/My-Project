@@ -8,8 +8,15 @@ import { defineConfig } from "vite"
 export default defineConfig({
   plugins: [
     react(),
-    ViteImageOptimizer(),
-    ViteMinifyPlugin({})
+    ViteImageOptimizer({
+      jpg: {
+        quality: 50,
+        progressive: true,
+        optimiseCoding: true,
+        optimizeScans: true,
+      }
+    }),
+    ViteMinifyPlugin()
   ],
   build: {
     outDir: "dist",
@@ -20,6 +27,7 @@ export default defineConfig({
         entryFileNames: `assets/js/ZAYDEN-${randomBytes(24).toString('hex').toUpperCase()}.js`,
         chunkFileNames: `assets/js/ZAYDEN-${randomBytes(24).toString('hex').toUpperCase()}.js`,
         assetFileNames: `assets/[ext]/ZAYDEN-${randomBytes(24).toString('hex').toUpperCase()}.[ext]`,
+        format: 'esm',
       }
     }
   },

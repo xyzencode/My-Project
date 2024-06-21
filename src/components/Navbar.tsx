@@ -30,7 +30,7 @@ export default function Navbar() {
     }, [scroll]);
     return (
         <>
-            <header className={`fixed bg-white w-full z-50 px-8 md:px-44 py-4 flex justify-between transition-[padding,box-shadow] duration-700 ${scroll ? 'shadow-lg py-2' : ''}`}>
+            <nav className={`fixed bg-white w-full z-50 px-8 select-none md:px-44 py-4 flex justify-between transition-[padding,box-shadow] duration-700 ${scroll ? 'shadow-lg py-[0.5rem]' : ''}`}>
                 <div className="font-bold text-xl cursor-default">Zayden<span className="text-primary">Store</span></div>
                 <div className="swapper-navbar font-bold leading-tight items-center justify-center flex">
                     <a href="#" className="link link-underline link-underline-primary text-black">Home</a>
@@ -41,7 +41,7 @@ export default function Navbar() {
                 <div className="lg:hidden relative">
                     <IoIosMenu className="swapper-icon" onClick={() => setOpen(!open)} />
                 </div>
-            </header>
+            </nav>
             <div className={`fixed w-full h-full bg-black bg-opacity-50 top-0 left-0 z-40 ${open ? 'block' : 'hidden'}`} onClick={() => setOpen(false)}>
                 <IoIosMenu className="swapper-icon" />
             </div>

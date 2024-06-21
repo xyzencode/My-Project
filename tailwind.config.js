@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      width: {
+        '500': '500px',
+      },
       colors: {
         primary: "#0070f3",
         secondary: "#ff0080"
