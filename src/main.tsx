@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import router from "@/routes/index.tsx"
 import '../styles/global.css'
+import { RouterProvider } from 'react-router-dom'
 
-// eslint-disable-next-line react-refresh/only-export-components
-const App = React.lazy(() => import('./App.tsx'))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
